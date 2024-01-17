@@ -1,5 +1,6 @@
 # tkinterのimport
 import tkinter as tk
+import customtkinter as ctk 
 #グローバル変数をセット
 import time_limit_value as glimit
 
