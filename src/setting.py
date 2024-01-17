@@ -168,6 +168,7 @@ def setting_end():
             setting_form.destroy()
 
 
+# 設定formを開く
 def setting():
     global gend
     global setting_form
@@ -357,71 +358,6 @@ def setting():
     f_password = fp.read()
     fp.close()
 
-    # メインウィンドウ
-    # setting_form = tk.Tk()
-    # form_x = 405
-    # form_y = 450
-    # setting_form.geometry('%dx%d' % (form_x, form_y))
-    # setting_form.title('設定画面')
-    # # ×を押したときの処理
-    # setting_form.protocol("WM_DELETE_WINDOW", lambda: delete_window())
-    # #フレームの作成
-    # setting_frame = tk.Frame(setting_form,width=form_x,height=form_y)
-
-    # # パスワード設定
-    # password_set_label = tk.Label(setting_frame,text='パスワードを設定できます',font=("",12))
-    # password_set_btn = tk.Button(setting_frame,text='パスワード設定',command=lambda:password_set_click())
-    # # 現在のパスワード
-    # if f_password =="":
-    #     password_now_label = tk.Label(setting_frame,text='パスワードを設定していません',font=("",9))
-    # else:
-    #     password_now_label = tk.Label(setting_frame,text='現在のパスワード:%s' % f_password,font=("",9))
-    # #制限時間の設定
-    # limit_set_label = tk.Label(setting_frame,text='制限時間を設定できます',font=("",12))
-    # limit_set_btn = tk.Button(setting_frame,text='制限時間設定',command=lambda:limit_set_click())
-    # if f_limit =="":
-    #     limit_now_label = tk.Label(setting_frame,text='制限時間を設定していません',font=("",9))
-    # else:
-    #     limit_now_label = tk.Label(setting_frame,text='現在の制限時間:%s分' % f_limit,font=("",9))
-
-    # #経過時間
-    # limit_label = tk.Label(setting_frame,text='経過時間:-',font=("",12))
-    # # #計測開始ボタン
-    # # time_start_btn = tk.Button(setting_frame,text='計測開始',command=lambda:time_start_click())
-    # # #計測停止ボタン
-    # # time_stop_btn = tk.Button(setting_frame,text='計測停止',command=lambda:time_stop_click())
-    # #再起動ボタン
-    # app_restart_btn = tk.Button(setting_frame,text='アプリを再起動',command=lambda:app_restart_click())
-    # #終了ボタン
-    # app_end_btn = tk.Button(setting_frame,text='アプリを終了',command=lambda:setting_end())
-
-    # # テキストの位置
-    # label_place = 0
-    # # ボタンの位置
-    # btn_place = form_x*(3/5)
-    # # パスワード設定の配置(y=0)
-    # password_set_label.place(x=label_place,y=0)
-    # password_now_label.place(x=label_place,y=20)# form_xの3/5の位置に配置
-    # password_set_btn.place(x=btn_place,y=0,width=100,height=30)  # form_xの2/5の位置に配置
-    # # 制限時間設定の配置
-    # limit_set_label.place(x=label_place,y=50)
-    # limit_now_label.place(x=label_place,y=70)
-    # limit_set_btn.place(x=btn_place,y=50,width=100,height=30)
-    # # 経過時間ラベルの配置
-    # limit_label.place(x=form_x*(7/10),y=form_x*(9/10))
-    # # # 計測開始ボタンの配置
-    # # time_start_btn.place(x=120,y=60)
-    # # # 計測停止ボタンの配置
-    # # time_stop_btn.place(x=120,y=100)
-    # # 再起動ボタンの配置
-    # app_restart_btn.place(x=0,y=form_y*9/10)
-    # # 終了ボタンの配置
-    # app_end_btn.place(x=form_x/2-40,y=form_y-150)
-
-    # setting_frame.pack()
-    # setting_form.after(1000,label_update)
-    # time_start_click()
-    # Selecting GUI theme - dark, light , system (for system default)
     ctk.set_appearance_mode("white")
 
     # Selecting color theme - blue, green, dark-blue
